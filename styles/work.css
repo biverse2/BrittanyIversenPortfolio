@@ -1,0 +1,51 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    padding: 1em 0;
+    padding-bottom: 3em;
+  }
+  
+  main > h1 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.8rem;
+    max-width: 90%;
+  }
+  
+  main > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    justify-items: center;
+    align-items: start;    /* make items sit at the top of each cell */
+  }
+  
+  main > div img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: 200px;          /* uniform height for all images */
+    object-fit: cover;      /* crop/scale to fill without distortion */
+    border-radius: 8px;
+    
+  }
+  
+  #videoTurtleQuest {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 2em;
+    border-bottom: 1em;
+  }
+  
+  @media (max-width: 600px) {
+    main > div {
+      grid-template-columns: 1fr;
+    }
+  }
+  

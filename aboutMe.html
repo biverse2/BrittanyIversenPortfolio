@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- slicknav links  -->
+	<link rel="stylesheet" href="styles/slicknav.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			$('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+		});
+	</script>
+
+
+
+	<link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/aboutMe.css">
+	<link rel="shortcut icon" href="images/favicon.ico">
+    <title>About Me</title>
+</head>
+<body>
+	<header>
+		<div>
+			<h2>Brittany Iversen's Portfolio</h2>
+		</div>
+	</header>
+
+	<nav id="mobilemenu"></nav>
+	<nav id="nav_menu">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="aboutMe.html">About Me</a></li>
+			<li><a href="myWork.html">My Work</a>
+				<ul>
+					<li><a href="lua.html">Lua</a></li>
+					<li><a href="java.html">Java</a></li>
+                    <li><a href="cpp.html">C/C++</a></li>
+                    <li><a href="python.html">Python</a></li>
+				</ul>
+			</li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="extras.html">Extras</a></li>
+		</ul>
+	</nav>
+
+
+	<main>
+        <blockquote id="aboutMeBlock"> I am a computer science student currently pursuing a bachelor's degree with a specialization in video game development. My passion lies in creating immersive gaming experiences using Unity Engine, CryEngine, and Unreal Engine 5.  Additionally, I have experience in graphic design, allowing me to create visually appealing user interfaces, promotional materials, and game assets. I also play Women's Ice Hockey at the State University of Oswego in New York! I love video games, my favorites being Fallout 4, Call of Duty Black Ops 3, and im currently playing the Last of Us Pt.2.  </blockquote>
+
+		<div id="headshot">
+			<img src="pictures/headshot.jpg" alt="">
+		</div>
+		
+	
+	</main>
+	<footer>
+		<p>&copy; <span id="copyrightyear"></span> Brittany Iversen Productions</p>
+	</footer>
+
+	<script>
+        const d = new Date();
+        document.getElementById('copyrightyear').innerHTML = d.getFullYear();
+    </script>
+</body>
+</html>
+<script src="pictureScript.js"></script>

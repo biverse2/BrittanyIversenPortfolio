@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- slicknav links  -->
+	<link rel="stylesheet" href="styles/slicknav.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			$('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+		});
+	</script>
+
+
+
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/work.css">
+	<link rel="shortcut icon" href="images/favicon.ico">
+    <title>Lua</title>
+</head>
+<body>
+	<header>
+		<div>
+			<h2>Brittany Iversen's Portfolio</h2>
+		</div>
+	</header>
+
+	<nav id="mobilemenu"></nav>
+	<nav id="nav_menu">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="aboutMe.html">About Me</a></li>
+			<li><a href="myWork.html">My Work</a>
+				<ul>
+					<li><a href="lua.html">Lua</a></li>
+					<li><a href="java.html">Java</a></li>
+                    <li><a href="cpp.html">C/C++</a></li>
+                    <li><a href="python.html">Python</a></li>
+				</ul>
+			</li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="extras.html">Extras</a></li>
+		</ul>
+	</nav>
+
+
+	<main>
+        <h1>A quick run-through of my version of King's Quest by Sierra! (Turtle's Quest). My first attempt at a game where I design all of the characters/backgrounds/code in a 2D setting. </h1>
+
+		<div id="videoTurtleQuest">
+			<iframe width="420" height="315"
+			src="https://www.youtube.com/embed/e5b-yd20O4k">
+			</iframe>
+		</div>
+		
+	
+	</main>
+	<footer>
+		<p>&copy; <span id="copyrightyear"></span> Brittany Iversen Productions</p>
+	</footer>
+
+	<script>
+        const d = new Date();
+        document.getElementById('copyrightyear').innerHTML = d.getFullYear();
+    </script>
+</body>
+</html>
+<script src="pictureScript.js"></script>
